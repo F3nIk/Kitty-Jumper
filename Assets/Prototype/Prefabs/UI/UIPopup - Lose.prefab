@@ -3245,6 +3245,7 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 1
   TextLabel: {fileID: 0}
+  TextMeshProLabel: {fileID: 0}
 --- !u!1 &6423558816174822675
 GameObject:
   m_ObjectHideFlags: 0
