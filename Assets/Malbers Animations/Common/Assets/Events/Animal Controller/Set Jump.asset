@@ -19,6 +19,8 @@ MonoBehaviour:
 
     Bool Response
 
-    MAnimal.State_Pin(State ID: Jump)
+    MAnimal.State_Pin(State
+    ID: Jump)
 
     MAnimal.State_Pin_ByInput(bool) *Dynamic'
+  debug: 1

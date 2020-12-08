@@ -90,14 +90,14 @@ MonoBehaviour:
     Variable: {fileID: 0}
   jumpProfiles:
   - name: On Place
-    VerticalSpeed: 0.1
+    VerticalSpeed: 0
     JumpLandDistance: 1.1
     fallingTime: 0.5
     CliffTime:
       minValue: 0.5
       maxValue: 0.7
     CliffLandDistance: 0.75
-    HeightMultiplier: 1
+    HeightMultiplier: 1.0012213
     ForwardMultiplier: 1
   - name: Forward
     VerticalSpeed: 1.1
