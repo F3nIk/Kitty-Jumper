@@ -4,12 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(MalbersInput))]
 public class InputType : MonoBehaviour
 {
+
+
+#if UNITY_STANDALONE
 	private void Start()
 	{
 		SetInputType();
 	}
-
-#if UNITY_STANDALONE
 
 	private void SetInputType()
 	{
