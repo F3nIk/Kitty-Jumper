@@ -18,7 +18,7 @@ public class JumpButton : MonoBehaviour, IPointerUpHandler
 	private IEnumerator Jump()
 	{
 		onJump?.Invoke(true);
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.25f);
 		onJump?.Invoke(false);
 	}
 }

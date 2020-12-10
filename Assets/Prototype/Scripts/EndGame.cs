@@ -1,5 +1,4 @@
-﻿using Doozy.Engine;
-using Doozy.Engine.Progress;
+﻿using Doozy.Engine.Progress;
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +14,6 @@ public class EndGame : MonoBehaviour
 	{
 		SetLabel();
 		Invoke("SetProgressors", 1f);
-		//SetProgressors();
 	}
 
 	private void SetLabel()
@@ -27,8 +25,6 @@ public class EndGame : MonoBehaviour
 	private void SetProgressors()
 	{
 		float progressLeft = Progress.Instance.ProgressRatio;
-
-		Debug.Log($"ProgressLeft = {progressLeft}");
 
 		foreach(Progressor progressor in progressorGroup.Progressors)
 		{
@@ -45,8 +41,6 @@ public class EndGame : MonoBehaviour
 				progressLeft = 0;
 				break;
 			}
-
-			Debug.Log($"ProgressLeft = {progressLeft}");
 		}
 	}
 

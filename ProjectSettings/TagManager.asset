@@ -9,6 +9,7 @@ TagManager:
   - Fly
   - Animal
   - Water
+  - Timer
   layers:
   - Default
   - TransparentFX

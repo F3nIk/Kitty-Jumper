@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: UIViewSettings
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: efb2cf1ccc717a441b4e741998adea3a, type: 2}
-  TargetOrientation: 2
+  TargetOrientation: 0
   BehaviorAtStart: 0
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   DeselectAnyButtonSelectedOnHide: 0

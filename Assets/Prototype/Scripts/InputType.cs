@@ -1,21 +1,17 @@
-﻿using MalbersAnimations;
+﻿#if UNITY_EDITOR
+
+using MalbersAnimations;
 using UnityEngine;
 
 [RequireComponent(typeof(MalbersInput))]
 public class InputType : MonoBehaviour
 {
 
-
-#if UNITY_STANDALONE
 	private void Start()
 	{
-		SetInputType();
+		GetComponent<MalbersInput>().enabled = true;
 	}
 
-	private void SetInputType()
-	{
-		if (TryGetComponent<MalbersInput>(out var mInput)) mInput.enabled = true;	
-	}
+}
 
 #endif
-}

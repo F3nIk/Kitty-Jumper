@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MalbersAnimations.Utilities;
+﻿using MalbersAnimations.Utilities;
 using UnityEngine;
 
 public class Progress : MonoBehaviour

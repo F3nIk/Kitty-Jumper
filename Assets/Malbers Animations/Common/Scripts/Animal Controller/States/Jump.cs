@@ -73,6 +73,7 @@ namespace MalbersAnimations.Controller
             foreach (var jump in jumpProfiles)                          //Save/Search the Current Jump Profile by the Lowest Speed available
             {
                 if (jump.VerticalSpeed <= animal.VerticalSmooth) activeJump = jump;
+                //Debug.Log(activeJump.name);
             }
         }
 

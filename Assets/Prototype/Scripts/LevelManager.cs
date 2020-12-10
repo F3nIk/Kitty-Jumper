@@ -21,24 +21,10 @@ public class LevelManager : MonoBehaviour
 	#endregion
 
 	[SerializeField] private Graph ingameGraph;
-	private Timer timer;
 
-	private void OnEnable()
-	{
-		TryGetComponent(out timer);
-		timer.TimeOver += OnTimeOver;
-	}
-
-	private void OnDisable()
-	{
-		timer.TimeOver -= OnTimeOver;
-	}
-
-	private void OnTimeOver()
+	public void EndLevel()
 	{
 		ingameGraph.SetActiveNodeByName("EndGameEvent");
 
 	}
-	
-
 }
