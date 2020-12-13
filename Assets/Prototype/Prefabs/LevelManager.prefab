@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2805973252729030031}
   - component: {fileID: 2805973252729030030}
-  - component: {fileID: 2805973252729030028}
+  - component: {fileID: 4826082756925926858}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameGraph: {fileID: 11400000, guid: 10154396aa8e503419ab830bf7f70e15, type: 2}
---- !u!114 &2805973252729030028
+--- !u!114 &4826082756925926858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,47 +54,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 2805973252729030029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c75b2c1b8851049bd229e39b8de4de, type: 3}
+  m_Script: {fileID: 11500000, guid: 41eb9c17bc0693d448a412425a2d17b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testMode: 0
-  duration: 30
-  OnValueChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnTimeOver:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2805973252729030030}
-        m_MethodName: EndLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  Events:
+  - Event: {fileID: 11400000, guid: 106756b5d3799ce488ac80db91d07a9b, type: 2}
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2805973252729030030}
+          m_MethodName: EndLevel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    AdvancedInteger: 0
+    AdvancedBool: 0
+    InvertBool: 0

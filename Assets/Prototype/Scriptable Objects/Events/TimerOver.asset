@@ -10,17 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c084bb85b499301498518868eb44437c, type: 3}
-  m_Name: Set Jump
+  m_Name: TimerOver
   m_EditorClassIdentifier: 
-  Description: 'Tries to Activate  the Jump State
-
-
-    Connect to:
-
-    Bool Response
-
-    MAnimal.State_Pin(State
-    ID: Jump)
-
-    MAnimal.State_Pin_ByInput(bool) *Dynamic'
+  Description: 
   debug: 0

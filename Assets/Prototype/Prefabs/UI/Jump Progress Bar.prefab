@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7387195947623071863}
   - component: {fileID: 7387195947623071862}
+  - component: {fileID: 2432112530783219056}
   m_Layer: 5
   m_Name: Jump Progress Bar
   m_TagString: Untagged
@@ -295,3 +296,96 @@ MonoBehaviour:
   m_maxValue: 1
   m_wholeNumbers: 0
   m_currentValue: 0
+--- !u!114 &2432112530783219056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387195947623071860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eb9c17bc0693d448a412425a2d17b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Events:
+  - Event: {fileID: 11400000, guid: bc4799804dcc1dc4093d3701f675fbfd, type: 2}
+    useInt: 0
+    useFloat: 1
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7387195947623071862}
+          m_MethodName: UpdateProgress
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7387195947623071862}
+          m_MethodName: SetValue
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    AdvancedInteger: 0
+    AdvancedBool: 0
+    InvertBool: 0

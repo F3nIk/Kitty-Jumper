@@ -7,8 +7,8 @@ public class EndGame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI label;
     [SerializeField] private ProgressorGroup progressorGroup;
 
-    private const string winLabelText = "Victory";
-    private const string loseLabelText = "Lose";
+    [SerializeField] private string winLabelText = "Victory";
+	[SerializeField] private string loseLabelText = "Lose";
 
 	public void OnEndGameViewEnable()
 	{

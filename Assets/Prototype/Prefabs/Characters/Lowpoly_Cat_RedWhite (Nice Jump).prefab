@@ -1197,7 +1197,7 @@ MonoBehaviour:
   PivotPosDir: 0
   showStates: 1
   ModeShowEvents: 0
-  Editor_Tabs1: 2
+  Editor_Tabs1: 1
   Editor_Tabs2: 4
   SelectedMode: 0
   debugStates: 0
@@ -1958,28 +1958,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f686bc88b2f81c4da2cf51426823059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerJumpProgressor: {fileID: 0}
   controller: {fileID: 3648339757134889961}
   jumpId: {fileID: 11400000, guid: 9ae07cd2f8f4c054687fecf634f8e5b3, type: 2}
   powerIncreaseStep: 0.5
   jumpHeightPowerMultiplier: 0
   jumpForwardPowerMultiplier: 0
-  OnValueChange:
+  onValueChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetValue
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetValue
+      - m_Target: {fileID: 11400000, guid: bc4799804dcc1dc4093d3701f675fbfd, type: 2}
+        m_MethodName: Invoke
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

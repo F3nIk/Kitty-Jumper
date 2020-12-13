@@ -1,11 +1,9 @@
-﻿using Doozy.Engine.Progress;
-using MalbersAnimations;
+﻿using MalbersAnimations;
 using MalbersAnimations.Controller;
 using UnityEngine;
 
 public class JumpState : MonoBehaviour
 {
-	[SerializeField] private Progressor powerJumpProgressor;
 	[SerializeField] private MAnimal controller;
 	[SerializeField] private StateID jumpId;
 
@@ -14,7 +12,7 @@ public class JumpState : MonoBehaviour
 	[SerializeField] [Range(0f, 2f)] private float jumpForwardPowerMultiplier = 0;
 
 	[Header("POWER OF JUMP")]
-	public FloatEvent OnValueChange;
+	[SerializeField] private FloatEvent onValueChange;
 
 	private float power = 0;
 	private const float minPower = 0;
@@ -23,15 +21,8 @@ public class JumpState : MonoBehaviour
 	private bool invokeIncrease = false;
 	private float startTime = 0;
 
-	private void Start()
-	{
-		if (powerJumpProgressor == null) powerJumpProgressor = GameObject.Find("Jump Progress Bar").GetComponent<Progressor>();
-	}
-
 	private void Update()
 	{
-		if (power <= 0) return;
-
 		if (invokeIncrease)
 		{
 			IncreasePower();
@@ -43,6 +34,7 @@ public class JumpState : MonoBehaviour
 
 		UpdateProgressBar();
 		UpdateJumpProfile();
+
 	}
 
 	public void Increase(bool state)
@@ -52,32 +44,36 @@ public class JumpState : MonoBehaviour
 
 	private void IncreasePower()
 	{
-		startTime += powerIncreaseStep * Time.deltaTime;
-
-		power = Mathf.Lerp(minPower, maxPower, startTime);
-
 		if (startTime > 1)
 		{
 			return;
 		}
+
+		startTime += powerIncreaseStep * Time.deltaTime;
+
+		power = Mathf.Lerp(minPower, maxPower, startTime);
+
+		
 	}
 
 	private void DecreasePower()
 	{
-		startTime -= powerIncreaseStep * Time.deltaTime;
-
-		power = Mathf.Lerp(minPower, maxPower, startTime);
-
 		if (startTime < 0)
 		{
 			startTime = 0;
 			return;
 		}
+
+		startTime -= powerIncreaseStep * 2 * Time.deltaTime;
+
+		power = Mathf.Lerp(minPower, maxPower, startTime);
+
+		
 	}
 
 	private void UpdateProgressBar()
 	{
-		OnValueChange?.Invoke(power);
+		onValueChange.Invoke(power);
 	}
 
 	private void UpdateJumpProfile()
