@@ -1715,78 +1715,54 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400130, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
     m_Threshold: 0
-    m_Position: {x: 0, y: 0.5}
+    m_Position: {x: 0, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400132, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.071428575
-    m_Position: {x: -1, y: 1}
+    m_Threshold: 0.09090909
+    m_Position: {x: -1, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400134, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.14285715
-    m_Position: {x: 1, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Vertical
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400106, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.21428572
-    m_Position: {x: 0, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Vertical
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400108, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.2857143
-    m_Position: {x: -1, y: 1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Vertical
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400110, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.35714287
-    m_Position: {x: 1, y: 1}
+    m_Threshold: 0.18181819
+    m_Position: {x: 1, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400074, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.42857143
-    m_Position: {x: 0, y: 2}
+    m_Threshold: 0.27272728
+    m_Position: {x: 0, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400076, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.5
-    m_Position: {x: -1, y: 2}
+    m_Threshold: 0.36363637
+    m_Position: {x: -1, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400078, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.5714286
-    m_Position: {x: 1, y: 2}
+    m_Threshold: 0.45454547
+    m_Position: {x: 1, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400122, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.64285713
+    m_Threshold: 0.54545456
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1794,7 +1770,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400120, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.71428573
+    m_Threshold: 0.6363636
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1802,24 +1778,24 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400124, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.78571427
-    m_Position: {x: 0, y: -1}
+    m_Threshold: 0.72727275
+    m_Position: {x: 0, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400126, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.85714287
-    m_Position: {x: -1, y: -1}
+    m_Threshold: 0.8181818
+    m_Position: {x: -1, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400128, guid: 27d320a40bca11741a45a552acf3d354, type: 3}
-    m_Threshold: 0.9285714
-    m_Position: {x: 1, y: -1}
+    m_Threshold: 0.90909094
+    m_Position: {x: 1, y: 0.25}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
@@ -6427,7 +6403,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place End
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101372391672810790}
@@ -6485,7 +6461,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump Forward
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101233414230311592}
@@ -6654,7 +6630,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place End
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101870677534556016}
@@ -6708,7 +6684,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump Run
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101876685151855394}
@@ -6796,7 +6772,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101014215714850196}
@@ -6989,7 +6965,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place End
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101299546714236406}
@@ -7298,7 +7274,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place Start
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101704502548031892}
@@ -7381,7 +7357,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place Start
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101390272846327652}
@@ -7498,7 +7474,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump In Place Start
-  m_Speed: 1
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101328882290338892}
@@ -8001,12 +7977,12 @@ AnimatorStateMachine:
   - {fileID: 1109698884210466922}
   - {fileID: 1109629976594951376}
   m_StateMachineTransitions:
-  - first: {fileID: 1107231746298051510}
-    second:
-    - {fileID: 1109785767638363906}
   - first: {fileID: 1107469501483250876}
     second:
     - {fileID: 1109033166447876592}
+  - first: {fileID: 1107231746298051510}
+    second:
+    - {fileID: 1109785767638363906}
   - first: {fileID: 1107070459965775536}
     second:
     - {fileID: 1109385210547945196}
@@ -8177,7 +8153,7 @@ AnimatorStateMachine:
     m_Position: {x: 348, y: 84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102158724749849460}
-    m_Position: {x: 348, y: -12, z: 0}
+    m_Position: {x: 350, y: -10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
