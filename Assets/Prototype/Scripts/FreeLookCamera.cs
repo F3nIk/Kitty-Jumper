@@ -1,28 +1,34 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class FreeLookCamera : MonoBehaviour
 {
-	private Vector3 followDirection = Vector3.zero; 
+	[SerializeField] private float forwardLoopSensitivity = 1.25f;
+	[SerializeField] private float freelookLoopSensitivity = 0.05f;
+	
+	private Vector3 forwardDirection = Vector3.zero; 
 	private Vector2 joystickAxis = Vector2.zero;
 
+	private Quaternion lastCameraRotation = Quaternion.identity;
 	private bool isUnlock = false;
+	private float freeLoopTimer = 0;
+	private float forwardLoopTimer = 0;
 
 	private void Start()
 	{
-		followDirection = transform.localRotation.eulerAngles;
+		forwardDirection = transform.localRotation.eulerAngles;
+		lastCameraRotation = transform.localRotation;
 	}
 
 	private void Update()
 	{
-		if (isUnlock == false)
-		{
-			RotateToForward();
-			return; // todo: smooth movement or something cool for camera
-		}
-
-		if (joystickAxis != Vector2.zero)
+		if(isUnlock)
 		{
 			FreeRotateCamera();
+		}
+		else
+		{
+			RotateToForward();
 		}
 	}
 
@@ -38,28 +44,45 @@ public class FreeLookCamera : MonoBehaviour
 
 	private void RotateToForward()
 	{
-		transform.localRotation = Quaternion.Euler(followDirection);
+		freeLoopTimer = 0;
+
+		if (Vector3.Distance(lastCameraRotation.eulerAngles, forwardDirection) > 1)
+		{
+			if (forwardLoopTimer >= 1) return;
+
+			transform.localRotation = Quaternion.Lerp(lastCameraRotation, Quaternion.Euler(forwardDirection), forwardLoopTimer);
+			forwardLoopTimer += forwardLoopSensitivity * Time.deltaTime;
+		}
 	}
 
 	private void FreeRotateCamera()
 	{
-		float angle = CalculateRotationAngle(joystickAxis);
+		float angle = GetRotationAngle();
 
-		if (joystickAxis.x < 0) angle *= -1;
+		if (float.IsNaN(angle)) return;
 
-		Vector3 rotation = new Vector3(22, angle, 0);
+		Vector3 rotation = new Vector3(forwardDirection.x, angle, 0);
 
-		transform.localRotation = Quaternion.Euler(rotation);
+		freeLoopTimer += freeLoopTimer > 1 ? -freeLoopTimer : freelookLoopSensitivity * Time.deltaTime;
+
+		transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(rotation), freeLoopTimer);
+		lastCameraRotation = transform.localRotation;
+
+		forwardLoopTimer = 0;
 	}
 
-	private float CalculateRotationAngle(Vector2 axis)
+	private float GetRotationAngle()
 	{
+		Vector2 axis = new Vector2(joystickAxis.x, Mathf.Abs(joystickAxis.y));
+
 		Vector2 forwardAxis = new Vector2(0, 1);
 		Vector2 currentAxis = axis;
 
 		float dot = Vector2.Dot(forwardAxis, currentAxis);
 		float cosA = dot / (forwardAxis.magnitude * currentAxis.magnitude);
 		float angle = Mathf.Acos(cosA) * Mathf.Rad2Deg;
+
+		if (joystickAxis.x < 0) angle *= -1;
 
 		return angle;
 	}

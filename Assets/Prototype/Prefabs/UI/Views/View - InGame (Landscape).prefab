@@ -909,21 +909,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 110aa2df231939b4cbf5ed89faf16b2a,
+        type: 2}
     - target: {fileID: 2904271119256918459, guid: 81d5e17698b39c74c8ccf207bf994533,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Increase
+      value: Invoke
       objectReference: {fileID: 0}
     - target: {fileID: 2904271119256918459, guid: 81d5e17698b39c74c8ccf207bf994533,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 110aa2df231939b4cbf5ed89faf16b2a,
+        type: 2}
     - target: {fileID: 2904271119256918459, guid: 81d5e17698b39c74c8ccf207bf994533,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Increase
+      value: Invoke
       objectReference: {fileID: 0}
     - target: {fileID: 2904480817664088633, guid: 81d5e17698b39c74c8ccf207bf994533,
         type: 3}
@@ -1103,7 +1105,7 @@ PrefabInstance:
     - target: {fileID: 7387195946686263332, guid: 868abce025028444db7f7e6a19604565,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0031738281
+      value: -0.0034179688
       objectReference: {fileID: 0}
     - target: {fileID: 7387195947623071860, guid: 868abce025028444db7f7e6a19604565,
         type: 3}
@@ -1188,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 7387195947623071863, guid: 868abce025028444db7f7e6a19604565,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.1999512
+      value: 2.2001953
       objectReference: {fileID: 0}
     - target: {fileID: 7387195947623071863, guid: 868abce025028444db7f7e6a19604565,
         type: 3}
@@ -1358,7 +1360,7 @@ PrefabInstance:
     - target: {fileID: 5470379699631504026, guid: 2e56d738d1f59da4bae46d467ea7d601,
         type: 3}
       propertyPath: m_fontSize
-      value: 44.55
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e56d738d1f59da4bae46d467ea7d601, type: 3}
